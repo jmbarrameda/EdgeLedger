@@ -1,0 +1,169 @@
+.text-primary {
+  color: #28a745;
+}
+
+.text-secondary {
+  color: #0284d0;
+}
+
+.btn {
+  display: inline-block;
+  background: #28a745;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary,
+.bg-primary {
+  background: #28a745;
+  color: #fff;
+}
+
+.btn-secondary,
+.bg-secondary {
+  background: #0284d0;
+  color: #fff;
+}
+
+.btn-light,
+.bg-light {
+  background: #fff;
+  color: #333;
+}
+
+.btn-dark,
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px #fff solid;
+}
+
+.btn-outline:hover {
+  background: #fff;
+  color: #28a745;
+}
+
+.btn-outline-secondary:hover {
+  background: #fff;
+  color: #0284d0;
+}
+
+/* Flex Items */
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.flex-items > div {
+  padding: 20px;
+}
+
+/* Section: Solutions */
+.flex-columns.flex-reverse .row {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%;
+}
+
+.flex-columns img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+  justify-content: center;
+}
+
+.flex-columns h2 {
+  font-size: 2.2rem;
+  font-weight: 100;
+}
+
+.flex-columns h4 {
+  margin-bottom: 10px;
+}
+
+.flex-columns p {
+  margin: 20px 0;
+}
+
+/* Cases Section */
+
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  margin: 40px 0;
+}
+
+.section-padding {
+  padding: 20px 20px 40px;
+}
+
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.flex-grid .column img {
+  padding: 4px 0px;
+  height: 50%;
+  object-fit: cover;
+}
+
+@media screen (max-width: 768px) {
+  .flex-grid .column img {
+    height: unset;
+  }
+}
